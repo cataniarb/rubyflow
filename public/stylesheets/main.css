@@ -154,6 +154,8 @@ BODY.inner .entry {
   position: absolute;
   top: 8px;
   right: 20px;
+  font-family: 'courier new', monospace;
+  font-weight: bold;
 }
 
 #header H1 {

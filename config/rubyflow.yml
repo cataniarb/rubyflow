@@ -17,9 +17,9 @@ edit_expiration_in_minutes: 60
 
 # ga: UA-2237791-7
 sidebar: |-
-  <h3>Cosa e' ?></h3><p>Su CrugFlow troverai molte news sul mondo Ruby e sulle attivita' del <a href="http://cataniarb.org//">CRUG</a> a Catania ed in Sicilia.</p>
+  <h3>Cosa e' ?</h3><p>Su CrugFlow troverai molte news sul mondo Ruby e sulle attivita' del <a href="http://cataniarb.org//">CRUG</a> a Catania ed in Sicilia.</p>
 
-  <p> CrugFlow e' basato su<a http://wiki.github.com/Sutto/rubyflow/>RybyFlow</a>: un tool semplice e funzionale, creato in Ruby on Rails, per pubblicare news</p>
+  <p> CrugFlow e' basato su <a http://wiki.github.com/Sutto/rubyflow/>RybyFlow</a>: un tool semplice e funzionale, creato in Ruby on Rails, per pubblicare news</p>
 
   <h3>Chi ?</h3><p>RubyFlow e' stato creato da <a href="http://peterc.org/">Peter Cooper</a> di <a href="http://www.rubyinside.com/" rel="nofollow">Ruby Inside</a>, ma ultimamente e' un community site.</p>
  
