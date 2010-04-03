@@ -18,20 +18,15 @@
     <% end %>
   
     <p>
-      <%= f.text_field :title %>
+      <%= f.text_field :title , :size => 40%>
       <label for="title" class="title">Title <span class="hint">(used for archive pages, etc.)</span></label>
     </p>
   
     <p class="formatting-help">
-      <strong>If you wish, you may use these HTML tags to format your post:</strong><br />
-      <code style="font-size: 80%;">
-        &lt;a href=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote&gt; &lt;code&gt; &lt;em&gt; &lt;i&gt; &lt;strong&gt;
-      </code>
-        <br /><br />
-      <em>Yes, you <b>must use HTML</b> and not Textile or Markdown for now.</em></small>
+      <em>Now you can use Both <b>Textile</b> and <b>HTML</b> safely. Markdown is on the way</em></small>
     </p>
     
-    <p><%= f.text_area :content, :cols => 60, :rows => 8 %></p>
+    <p><%= f.text_area :content, :cols => 100, :rows => 15 %></p>
     
     <%= render :partial => 'home/signup_captcha' unless logged_in? %>
     

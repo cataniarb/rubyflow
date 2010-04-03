@@ -1,7 +1,7 @@
 class ItemsController < ApplicationController
   before_filter :login_required, :except => [:show, :list_for_tag, :index, :search, :category, :new, :create]
-  before_filter :admin_required, :only => [:destroy]
-  before_filter :permission_required, :only => [:edit, :update]  
+  # before_filter :admin_required, :only => [:destroy]
+  before_filter :permission_required, :only => [:edit, :update,:destroy]  
   before_filter :do_pagination, :only => [:index, :list_for_tag, :list_for_tags, :search, :recently]
   
   layout 'main'

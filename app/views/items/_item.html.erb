@@ -1,7 +1,7 @@
 <div class="post" style="position: relative;" id="item_wrapper_for_<%= item.id %>">
-  
+    <h4><%=h item.title %></h4>
 	<div class="entry">
-	<%= auto_link(safe(item.content)) %>
+	<%= auto_link(safe_textilize(item.content)) %>
   <!-- p>Tags: <% item.tag_array.each do |tag| %><%= link_to tag, tag_url(tag) %> <% end %></p -->
 	</div>
 	
@@ -14,7 +14,7 @@
   </div>
   
   <% div_for(item, :class => "admin-actions") do %>
-	  <% if admin? %> 
+	  <% if admin? || current_user.id == item.user_id %> 
 	    <%= link_to 'Remove', item, :confirm => 'Are you sure?', :method => :delete %>
 	  <% end %>
     

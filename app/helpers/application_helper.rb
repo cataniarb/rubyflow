@@ -16,4 +16,12 @@ module ApplicationHelper
     sanitize(txt, :tags => %w(a p code b strong i em blockquote), :attributes => %w(href)).split("\n").join("\n<br />")
   end
   
+  def safe_textilize( s )
+    if s && s.respond_to?(:to_s)
+      doc = RedCloth.new( s.to_s )
+      doc.filter_html = true
+      doc.to_html
+    end
+  end
+  
 end
