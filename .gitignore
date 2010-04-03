@@ -4,6 +4,7 @@ log/*.pid
 #config/development.sphinx.conf
 tmp/**/*
 config/database.yml
+config/twitterify.yml
 db/*.sqlite3
 coverage
 doc/plugins/*
