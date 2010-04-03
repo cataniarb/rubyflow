@@ -1,20 +1,20 @@
-<h2>Log In To The Flow</h2>
+<h1>Accedi a Catania.rb</h1>
 
 <% form_tag session_path do -%>
-<p><label for="login">Login</label><br/>
+<p><label for="login">Entra</label><br/>
 <%= text_field_tag 'login' %></p>
 
-<p><small>Note that logins are case sensitive. Use the same casing as displays on the site / you used at signup.</small></p>
+<p><small>Il tuo login &egrave; case sensitive ed &egrave; identico a quello usato in fase di <%= link_to 'registrazione', signup_path %> .</small></p>
 
 <p><label for="password">Password</label><br/>
 <%= password_field_tag 'password' %></p>
 
-<p><label for="remember_me">Remember me (for a year):</label>
-<%= check_box_tag 'remember_me' %></p>
+<p><label for="remember_me">Ricorda password </label>
+<%= check_box_tag 'remember_me', 1, true %></p>
 
 <p>
-  <%= submit_tag 'Log In' %>
-  or
-  <%= link_to 'Signup for a new account', signup_path, :title => 'It only takes about 15 seconds.' %>  
+  <%= submit_tag 'Entra' %>
+  oppure
+  <%= link_to 'Registra il tuo account', signup_path, :title => 'Ci vogliono solo 15 secondi :)' %>  
 </p>
 <% end -%>
