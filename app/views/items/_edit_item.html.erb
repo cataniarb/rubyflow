@@ -4,7 +4,7 @@
   <blockquote class="comment">
   
     <% if logged_in? %>
-      <p>Loggato come <strong><%= current_user.login %></strong></p>
+      <p>Sei loggato come <strong><%= current_user.login %></strong></p>
     <% else %>
       <p class="description">
       Se sei un utente registrato, effettua il <%= link_to 'log in', login_url %> per popolare i seguenti campi automaticamente.

@@ -1,5 +1,7 @@
 <%= render :partial => 'items/paginator' if @page_number > 1 %>
 
+<%= link_to 'Aggiungi una Notizia', new_item_path %>
+
 <% last_date = nil %>
 <% @items.each do |item| %>
   <div class="<%= cycle 'even', 'odd' %>">
@@ -11,3 +13,5 @@
   </div>
 <% end %>
 <%= render :partial => 'items/paginator' %>
+
+

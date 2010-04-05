@@ -1,0 +1,15 @@
+<div id="menu">
+    <ul>
+
+        <li><%= link_to 'News', items_path %></li>
+        <li><a href="#">Incontri</a></li>
+        <li><a href="#">Seminari</a></li>
+          <% if logged_in? %>
+            <li><%= link_to 'Preferiti', recently_items_path %></li>
+            <li><%= link_to 'Disconnetti', logout_url %></li>
+          <% else %>
+            <li><%= link_to 'Accedi', login_url %></li>
+          <% end %>
+    </ul>
+</div>
+
