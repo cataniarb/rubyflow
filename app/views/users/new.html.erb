@@ -2,26 +2,23 @@
 
 <%= error_messages_for :user %>
 
-<p><em>Sorry. Keeping it real bare bones for the moment, so no OpenID yet!</em></p>
-
 <% form_for :user, :url => users_path do |f| -%>
-<p><label for="login">Username (all alphanumerics and underscores, no spaces)</label><br/>
-<%= f.text_field :login %></p>
-
-<p><small>Usernames are case sensitive, but you're welcome to use mixed case and underscores as necessary (e.g. BobSmith Fred_Turner bert1974)</small></p>
-
-<p><label for="url">URL / Your Web Site (start with http://)</label><br/>
-<%= f.text_field :url %></p>
-
-<p><small>Note that this URL is linked from your username in various places around the site.</small></p>
-
-<p><label for="password">Password</label><br/>
-<%= f.password_field :password %></p>
-
-<p><label for="password_confirmation">Confirm Password</label><br/>
+<p><label for="login">Nome Utente </label><br/>
+<%= f.text_field :login %><br/>
+<small>(solo alfanumerici e underscore senza spazi, es. francesco83, enzo_s)</small>
+<br/>
+<label for="url">Il tuo sito Web, se ne hai uno</label><br/>
+<%= f.text_field :url %>
+<br/>
+ <small>(deve iniziare con http://)</small>
+<br/>
+<label for="password">Password</label><br/>
+<%= f.password_field :password %>
+<br/>
+<label for="password_confirmation">Conferma Password</label><br/>
 <%= f.password_field :password_confirmation %></p>
 
 <%= render :partial => 'home/signup_captcha' %>
 
-<p><%= submit_tag 'Sign up' %></p>
+<p><%= submit_tag 'Registrati' %></p>
 <% end -%>
