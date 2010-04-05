@@ -1,21 +1,22 @@
-app_name: crugflow
-app_title: CrugFlow
-default_title: "CrugFlow : le news di Catania Ruby User Group"
-sub_title: "Le news di Catania Ruby User Group"
-app_url: http://www.rubyflow.com/
-rss_url: http://feeds.feedburner.com/Rubyflow
-meta_keywords: "ruby, ruby news, ruby blog, rails, rubyonrails"
-meta_author: "Peter Cooper"
-body_class: rubyflow
+app_name: cataniarb
+app_title: Catania.rb
+default_title: "Catania.rb - Catania Ruby User Group"
+sub_title: "News che girano dal rosso tuppetturu"
+app_url: http://flow.cataniarb.org/
+rss_url: http://feeds.feedburner.com/cataniarb
+meta_author: "Michelangelo Altamore, Vincenzo Rivello, Alessandro De Simone"
+meta_keywords: "Ruby User Group Catania Italy, ruby programming language, computer science, software, ruby news, ruby blog, rails, rubyonrails"
+body_class: 
 
 # Set this to true for a more fancy interface, but for the cost of page load time
-uses_javascript: false
+uses_javascript: true
 
 # Edit expiration default: 60 (this means that editing ends 60 minutes after last update of item)
 # Set to 0 or omit to always allow editing of items by its owner
-edit_expiration_in_minutes: 60
+edit_expiration_in_minutes: 120
 
-# ga: UA-2237791-7
+ga: UA-5000112-4
+lloogg: 20310209c4dd7209
 sidebar: |-
   <h3>Cosa e' ?</h3><p>Su CrugFlow troverai molte news sul mondo Ruby e sulle attivita' del <a href="http://cataniarb.org//">CRUG</a> a Catania ed in Sicilia.</p>
 
