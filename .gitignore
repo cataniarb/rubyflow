@@ -9,5 +9,6 @@ db/*.sqlite3
 coverage
 doc/plugins/*
 doc/*
+*.swp
 #db/sphinx/development/*
 Capfile
